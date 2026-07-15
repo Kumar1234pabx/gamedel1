@@ -123,7 +123,24 @@ h1.title{font-family:'Cinzel',serif;font-weight:800;text-align:center;line-heigh
 .daycard .tg{font-size:9px;letter-spacing:1px;padding:3px 8px;border-radius:20px;background:var(--pink);color:#2a0014;text-transform:uppercase}
 .io{display:flex;justify-content:space-between;padding:7px 0;font-size:14px}.io .lab{color:var(--text-dim)}.io .val.set{color:var(--ok-soft);font-weight:600}.io .val.miss{color:#7e8d83}
 .note{margin-top:14px;font-size:13px;color:var(--text-dim);text-align:center;line-height:1.6}
-.game-hub{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:20px 4px}
+.game-hub {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px 4px;
+}
+
+@media (max-width: 420px) {
+  .game-hub {
+    gap: 10px;
+    padding: 16px 2px;
+  }
+  .gi-label {
+    font-size: 10px;
+  }
+}
+
 .game-icon{display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent}
 .game-icon:active .gi-img{transform:scale(.93)}
 .gi-img{width:min(96px,24vw);aspect-ratio:1;border-radius:22px;overflow:hidden;box-shadow:0 6px 22px rgba(0,0,0,.55);border:2px solid rgba(212,175,55,.35);transition:transform .12s,box-shadow .12s}
@@ -139,7 +156,24 @@ h1.title{font-family:'Cinzel',serif;font-weight:800;text-align:center;line-heigh
 .go-close{background:none;border:1px solid rgba(212,175,55,.4);color:var(--gold-light);padding:6px 14px;border-radius:8px;font-size:13px;cursor:pointer;font-family:'Cinzel',serif}
 .go-close:active{opacity:.7}
 .go-frame{flex:1;border:none;width:100%;display:block;background:#000}
-@media(max-width:420px){.game-hub{grid-template-columns:repeat(3,1fr);gap:10px;padding:16px 2px}.gi-label{font-size:10px}}
+.game-hub {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px 4px;
+}
+
+@media (max-width: 420px) {
+  .game-hub {
+    gap: 10px;
+    padding: 16px 2px;
+  }
+  .gi-label {
+    font-size: 10px;
+  }
+}
+
 .resource{margin-top:22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:18px 22px;border-radius:16px;border:1px dashed rgba(212,175,55,.5);background:rgba(212,175,55,.06)}
 .resource .rt{font-family:'Cinzel',serif;font-size:16px;color:var(--gold-light)}.resource .btn{width:auto}
 .action-row{margin-top:24px;display:flex;justify-content:center}.action-row .btn{width:auto;min-width:200px}
