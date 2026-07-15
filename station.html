@@ -95,7 +95,7 @@ img{max-width:100%;height:auto}
   <h2 class="gold-text" id="stTitle">Entry Station</h2>
   <p class="lead" id="stLead">Choose day &amp; action, find the delegate, then tap the button.</p>
   <div class="controls" id="controls">
-    <div><label class="fld">Day</label><select id="daySel"><option value="1">Day 1 · 27 Jul</option><option value="2">Day 2 · 28 Jul</option><option value="3">Day 3 · 29 Jul</option></select></div>
+    <div><label class="fld">Day</label><select id="daySel"><option value="1">Day 1 · 28 Jul</option><option value="2">Day 2 · 29 Jul</option><option value="3">Day 3 · 30 Jul</option></select></div>
     <div><label class="fld">Action</label><select id="modeSel"><option value="in">Check In</option><option value="out">Check Out</option></select></div>
   </div>
   <label class="fld" for="sphone">Delegate phone number or name</label>
@@ -111,8 +111,8 @@ img{max-width:100%;height:auto}
 <script>
 
 const API_URL="https://script.google.com/macros/s/AKfycbxqdrzavjQ-q3gYje46MuvY8oW_QXuUG22gtOIsOgat0xYv6ynYDSVlPIQAzknY2_yUng/exec";
-const EVENT_DAYS=["2026-07-27","2026-07-28","2026-07-29"];
-const DAY_LABELS=["Day 1 · 27 Jul","Day 2 · 28 Jul","Day 3 · 29 Jul"];
+const EVENT_DAYS=["2026-07-28","2026-07-29","2026-07-30"];
+const DAY_LABELS=["Day 1 · 28 Jul","Day 2 · 29 Jul","Day 3 · 30 Jul"];
 function api(params){return new Promise((resolve,reject)=>{
  if(!API_URL||API_URL.indexOf("PASTE_YOUR")===0){reject(new Error("Not connected yet: paste your Apps Script URL into API_URL."));return;}
  const cb="cb_"+Date.now()+"_"+Math.floor(Math.random()*1e6);const s=document.createElement("script");
